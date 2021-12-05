@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #ffffff;
+    color: #ff4d6d;
+    row-gap: 20rem;
+}
+
+.privacy-note{
+    color:black;
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    /* border: 1px solid black; */
+    align-items: center;
+    box-shadow: 5px -14px 15px #ced4da;
+    padding: 2rem;
+}
+
+#is-palindrome-msg{
+    display: none;
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#not-palindrome-msg{
+    display: none;
+    background-color:#c9184a;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#invalid-input{
+    display: none;
+}
+input{
+    margin: 1rem;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    width: 15rem;
+}
+
+button:disabled{
+    background-color: #ced4da;
+    border-color: #ced4da;
+    color: white;
+    cursor: not-allowed;
+}
+
+button:disabled:hover{
+    background-color: #ced4da;
+    border-color: #ced4da;
+    color: white;
+    cursor: not-allowed;
+    transform:scale(1,1);
+}
+
+button{
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: #ff4d6d;
+    font-weight: 700;
+    width: 10rem;
+    cursor: pointer;
+    border-color: #ff4d6d;
+    border-style:solid;
+    transform: scale(1,1);
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #ff4d6d;
+    color: #ffffff;
+    transform:scale(1.05,1.05);
+}
+button:active{
+    background-color: #c9184a;
+    border-color: #c9184a;
+    color: #ffffff;
+    transform:scale(1.03,1.03);
+}
+
+
+ul{
+    list-style:none;
+}
+
+li{
+    display: inline-block;
+    margin: 0 1rem;
+    cursor: pointer;
+    /* text-decoration: none; */
+    color: white;
+}
+
+footer{
+    background-color: #ffffff;
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 0 -14px 15px #ced4da;
+    /* border-top: 0.05px solid #6c757d; */
+}
